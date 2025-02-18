@@ -1,0 +1,3 @@
+# Express.js Route Parameter Handling: Non-Numeric ID Issue
+
+This repository demonstrates a common issue in Express.js route parameter handling: improperly managing non-numeric IDs. When a route expects a numeric ID but receives a non-numeric value, it might lead to unexpected behavior such as database errors or incorrect responses. This example shows the problem and a solution using input validation.
