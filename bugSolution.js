@@ -1,0 +1,14 @@
+const express = require('express');
+const app = express();
+app.get('/users/:id', (req, res) => {
+  const userId = parseInt(req.params.id);
+  //Validate if userId is a number
+  if(isNaN(userId)){
+    return res.status(400).send('Invalid user ID');
+  }
+  // ... some database query to fetch user data based on userId ...
+  if (!userData) {
+    return res.status(404).send('User not found');
+  }
+  res.send(userData);
+});
